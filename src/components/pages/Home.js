@@ -17,12 +17,10 @@ function Home({isFirstRender}) {
   // Motion Framer Variants
   const mainMotionVariants = {
     hidden: { x: '-100vw'},
-    visible: {
-      x: 0,
+    visible: { x: 0,
       transition: { type: 'spring', stiffness: 80 }
     },
-    exit: { 
-      x: '-100vw',
+    exit: { x: '-100vw',
       transition: { ease: 'easeInOut' } 
     }
   }
@@ -101,10 +99,16 @@ function Home({isFirstRender}) {
           animate='visible'
         >
           <Link to='projects' className='link'>
-            <button className='step-button'>
+            <motion.button className='step-button'
+              whileHover={{
+                scale: 1.2,
+                boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
+                border: '1px solid rgba(80, 112, 234, 0.8)'
+                }}
+            >
               <span className='.button-text-span'>Projects</span>
               <FaLongArrowAltRight className='arrow'/> 
-            </button>
+            </motion.button>
           </Link>
         </motion.div>
     </motion.main>

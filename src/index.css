@@ -13,54 +13,32 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 0 2rem;
-  max-width: 900px
+  max-width: 900px;
 }
 
 .project-header-text {
-  font-size: 4rem
+  font-size: 4rem;
+  margin-bottom: 3.2rem;
 }
 
 .contact-header-text {
-  font-size: 4rem
+  font-size: 4rem;
+  margin-bottom: 3.2rem;
+
 }
 
-.hello-svg {
-  overflow: visible;
-  stroke: #000;
-  stroke-width: 4;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
-.hello-svg {
-  overflow: visible;
-  stroke: #000;
-  stroke-width: 0.0789865;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
+/* WELCOME */
 
 .hello-text {
-  width: 400px;
-  margin: 0 auto;
+  width: 500px;
+  margin: 2rem auto;
 }
 
 .welcome-text {
+  font-size: 1.2rem;
   margin: 0 auto;
-  max-width: 400px;
-}
-
-.path {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-}
-
-.path2 {
-  overflow: visible;
-  stroke: #fff;
-  stroke-width: 2;
-  stroke-linejoin: round;
-  stroke-linecap: round;
+  max-width: 500px;
+  margin-bottom: 3rem;
 }
 
 .button-container {
@@ -89,11 +67,58 @@ body {
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid black;
-  margin: 2rem auto 0;
+  margin: auto 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .5rem;
   text-transform: uppercase;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding-bottom: 10rem;
+}
+
+.button-container.projects-buttons {
+  padding: 2rem 0;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+}
+
+.contact-list-container {
+  margin: 2rem auto;
+  max-width: 300px
+}
+
+.contact-list-container li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: black;
+}
+
+.contact-list-container li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.link-text {
+  display: inline-block;
+  padding-left: 1rem;
+  color: inherit
 }

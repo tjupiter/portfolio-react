@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { 
+  FaLongArrowAltLeft,
+  FaPhoneSquareAlt,
+  FaAt,
+  FaGithub,
+  FaLinkedin } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
+
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <motion.main className="container contact"
       initial={{ x: '100vw' }}
@@ -13,14 +22,61 @@ function Contact() {
     >
       <div>
         <h2 className='contact-header-text'>Contact</h2>
-        <p>CONTACT CARD</p>
+        <div className='contact-list-container'>
+          <ul >
+            <motion.li
+              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)' ,originX: 0 }}
+              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+            >
+              <a href="mailto:hello@pitju.hu" title="title">
+                <FaAt />
+                <span className='link-text'>hello@pitju.hu</span>
+              </a>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
+              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+            >
+              <a href="+447456607531" title="title">
+                <FaPhoneSquareAlt />
+                <span className='link-text'>07456 607531</span>
+              </a>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
+              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+            >
+              <a href="https://github.com/tjupiter/" title="title" >
+                <FaGithub />
+                <span className='link-text'>Github Repo</span>
+              </a>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
+              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+            >
+              <a href="https://www.linkedin.com/in/pitju/" title="title">
+                <FaLinkedin />
+                <span className='link-text'>Find me on LinkedIn</span>
+              </a>
+            </motion.li>
+          </ul>
+        </div>
       </div>
 
       <motion.div className='link-container'>
         <Link to='/projects' className='link'>
-          <button className='step-button'>
+          <motion.button className='step-button'
+            whileHover={{ 
+              scale: 1.2,
+              boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
+              border: '1px solid rgba(80, 112, 234, 0.8)'
+            }}
+
+            
+          >
             <FaLongArrowAltLeft className='arrow' /> Projects
-          </button>
+          </motion.button>
         </Link>
         
       </motion.div>

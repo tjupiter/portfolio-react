@@ -7,8 +7,6 @@ import Contact from './components/pages/Contact';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-
-  
   // get location information that will be needed fro AnimatePresence/'farmer-motion'
   const location = useLocation()
   const isFirstRender = useRef(true);
@@ -23,7 +21,7 @@ function App() {
             element={<Home isFirstRender={isFirstRender} />} />
 
           <Route path='/projects' 
-            element={<Projects  />} />
+            element={<Projects />} />
 
           <Route path='contact' 
             element={<Contact />} />
