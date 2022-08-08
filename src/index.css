@@ -1,13 +1,99 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Saira', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 900px
+}
+
+.project-header-text {
+  font-size: 4rem
+}
+
+.contact-header-text {
+  font-size: 4rem
+}
+
+.hello-svg {
+  overflow: visible;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.hello-svg {
+  overflow: visible;
+  stroke: #000;
+  stroke-width: 0.0789865;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.hello-text {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.path2 {
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.button-text-span {
+  display: inline-block;
+}
+
+.step-button {
+  width: 11rem;
+  padding: .8rem 1.6rem 0.6rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 2rem auto 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  text-transform: uppercase;
 }
