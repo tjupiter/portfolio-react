@@ -34,7 +34,7 @@ const projects = [
     "slug": "watchlist-vanillajs",
     "title": "Movie Watch List",
     "thumbnail": "",
-    "description": "This website was created using vanilla JavaScript. It fetches data from Open Movie Database API. The watchlist is stored in the localStorage. It was a fun project to work on and my plan is to rebuild the website using React and to add more functionality.",
+    "description": "This website was created using vanilla JavaScript. It fetches data from Open Movie Database API. The watchlist is stored in the localStorage. My plan is to rebuild the website using React and to add more functionality.",
     "siteUrl": "https://portfolio.pitju.hu/watchlist-vanillajs/",
     "githubUrl": "https://github.com/tjupiter/watchlist-vanillajs",
     "tags": "html, css, javascript"
@@ -44,7 +44,7 @@ const projects = [
     "slug": "react-todo-app",
     "title": "React Todo App",
     "thumbnail": "",
-    "description": "Todo App created with React. A great project to practice creating and using components and to get familiar with React. Datepicker were added to day and time selection and Framer Motion was used to animate components. Future features to come, ie. countdown and task description.",
+    "description": "Todo App created with React to practice using components and to get familiar with React. Datepicker were added to day and time selection and Framer Motion was used to animate components. Future features to come, ie. countdown and task description.",
     "siteUrl": "https://portfolio.pitju.hu/react-todo-app/",
   "githubUrl": "https://github.com/tjupiter/react-todo-app",
     "tags": "html, css, javascript, react"
@@ -72,7 +72,7 @@ const projects = [
   {
     "id": 8,
     "slug": "alpinejs",
-    "title": "Alpine.js Demo Site",
+    "title": "Alpine.js Demo",
     "thumbnail": "",
     "description": "This site was created to practice using Alpine.js. I really enjoy that library, really lightweight, easy to use and shows many resembelance to Vue.js. This is somthing I definitely will use in future projects.",
     "siteUrl": "https://portfolio.pitju.hu/alpinejs/",
@@ -82,7 +82,7 @@ const projects = [
   {
     "id": 7,
     "slug": "wbb",
-    "title": "WelcomeBabyBags",
+    "title": "Welcome Baby Bags",
     "thumbnail": "",
     "description": "That was the first real life project that I could work on as a freelancer, thanks for my friend. It was created using Laravel and was styled with TailwindCss. It was a great project and I am proud of making several pages of the whole site.",
     "siteUrl": "https://www.welcomebabybags.de",
@@ -91,7 +91,7 @@ const projects = [
   },
   {
     "id": 6,
-    "slug": "ea",
+    "slug": "evas-arche",
     "title": "Evas Arche",
     "thumbnail": "",
     "description": "It was an amazing feeling working on another real life project. Apart from 'Veranstaltungen' page it was my job to create the whole site. It was a challenging project as it was built using Laravel.",
@@ -102,9 +102,9 @@ const projects = [
   {
     "id": 5,
     "slug": "blog",
-    "title": "Personal Blog ",
+    "title": "Personal Blog",
     "thumbnail": "",
-    "description": "Practicing responsive web design by creating a mokcup personal website. It was created using a FreeCodeCamp tutorial. It was amongst the very first projects I worked at. It is my plan to re-vamp the page at some point and implement all the things I've learnt so far.",
+    "description": "Responsive mokcup personal website. It was created using a FreeCodeCamp tutorial. It was amongst the very first projects I worked at. It is my plan to re-vamp the page at some point and implement all the things I've learnt so far.",
     "siteUrl": "https://portfolio.pitju.hu/blog",
     "githubUrl": "",
     "tags": "html, css"
@@ -112,7 +112,7 @@ const projects = [
   {
     "id": 4,
     "slug": "vtd",
-    "title": "Todo App With Vue.js",
+    "title": "Vue.js Todo App",
     "thumbnail": "",
     "description": "This one page app was created using Vue.js styled with TailwindCSS. It was an exciting project to work on as it helped me to understand how Vue works in general, to learn to set up routing and a backend JSON server for data handling.",
     "siteUrl": "https://portfolio.pitju.hu/vtd/",
@@ -123,7 +123,7 @@ const projects = [
   {
     "id": 3,
     "slug": "fav-books",
-    "title": "Books with Vue.js",
+    "title": "Books - Vue.js",
     "thumbnail": "",
     "description": "A little project created with Vue.js. This gave me a great opportunity to get understand Vue.js as a framework more and to learn creating components, setting up routing, passing props and getting familiar with directives such as v-for.",
     "siteUrl": "https://portfolio.pitju.hu/fav-books/",

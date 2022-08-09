@@ -28,7 +28,7 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)' ,originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="mailto:hello@pitju.hu" title="title">
+              <a href="mailto:hello@pitju.hu" title="hello@pitju.hu">
                 <FaAt />
                 <span className='link-text'>hello@pitju.hu</span>
               </a>
@@ -37,7 +37,7 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="+447456607531" title="title">
+              <a href="tel:+447456607531" title="+447456607531">
                 <FaPhoneSquareAlt />
                 <span className='link-text'>07456 607531</span>
               </a>
@@ -46,7 +46,7 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="https://github.com/tjupiter/" title="title" >
+              <a href="https://github.com/tjupiter/" title="https://github.com/tjupiter/" >
                 <FaGithub />
                 <span className='link-text'>Github Repo</span>
               </a>
@@ -55,7 +55,7 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="https://www.linkedin.com/in/pitju/" title="title">
+              <a href="https://www.linkedin.com/in/pitju/" title="https://www.linkedin.com/in/pitju/">
                 <FaLinkedin />
                 <span className='link-text'>Find me on LinkedIn</span>
               </a>

@@ -18,27 +18,30 @@ body {
 
 .project-header-text {
   font-size: 4rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-header-text {
   font-size: 4rem;
   margin-bottom: 3.2rem;
-
 }
 
 /* WELCOME */
+.home {
+  min-height: 80vh;
+  /* overflow: hidden; */
+}
 
 .hello-text {
-  width: 500px;
-  margin: 2rem auto;
+  width: auto;
+  margin: 2rem auto ;
 }
 
 .welcome-text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 0 auto;
   max-width: 500px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .button-container {
@@ -61,9 +64,9 @@ body {
 }
 
 .step-button {
-  width: 11rem;
+  width: 9rem;
   padding: .8rem 1.6rem 0.6rem;
-  font-size: 1rem;
+  font-size: .8rem;
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid black;
@@ -78,18 +81,18 @@ body {
 
 .project-cards-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .project {
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 
 .button-container.projects-buttons {
   padding: 2rem 0;
-  gap: 2rem;
+  gap: 1rem;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -97,8 +100,8 @@ body {
 }
 
 .contact-list-container {
-  margin: 2rem auto;
-  max-width: 300px
+  margin: 2rem auto 4rem;
+  max-width: 300px;
 }
 
 .contact-list-container li {
@@ -115,10 +118,47 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin-left: 3rem;
 }
 
 .link-text {
   display: inline-block;
   padding-left: 1rem;
-  color: inherit
+  color: inherit;
+}
+
+@media screen and (min-width: 786px) {
+  .hello-text {
+    width: 500px;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
+  .project-header-text {
+    margin-bottom: 3.2rem;
+  }
+
+  .project {
+    padding-bottom: 10rem;
+  }
+
+  .project-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .button-container.projects-buttons {
+    gap: 2rem;
+  }
+
+  .step-button {
+    width: 11rem;
+    font-size: 1rem;
+  }
+
+  .contact-list-container li a{
+    margin-left: 4rem;
+  }
 }

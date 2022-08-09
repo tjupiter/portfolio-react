@@ -1,30 +1,54 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './ProjectCard.css'
-import rcw from '../../assets/img/rcw.png'
+import ProjectCardImage from './ProjectCardImage';
 import { FaGithub } from 'react-icons/fa';
-import { GoDeviceDesktop } from 'react-icons/go'
+import { GoDeviceDesktop } from 'react-icons/go';
+import { motion, useAnimation } from 'framer-motion'
 
 function ProjectCard(props) {
+  const divVariants = {
+    hidden: { opacity: 0, scale: 0},
+    visible: { opacity: 1, scale: 1,
+      transition: { duration: .3, delay: props.index % 2 ? 0.15 : 0.05 }
+    }
+  }
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible');
+    }
+  }, [control, inView])
+
   return (
-    <div className='card-container'>
-      <img src={rcw} alt='slug' />
+    <motion.div className='card-container'
+      variants={divVariants}
+      initial='hidden'
+      animate={control}
+      ref={ref}
+    >
+      <ProjectCardImage slug={props.slug} title={props.title} />
+      {/* <img src={rcw} alt={`Screenshot of ${props.title}`} /> */}
       <h3 className='card-title'>{props.title}</h3>
       <p className='card-text'>
         {props.text}
       </p>
      <div className='card-link-outer-container'>
         <div className="card-link-container">
-          <a href={props.siteUrl} className="card-link">
+          <a href={props.siteUrl} title={props.siteUrl} className="card-link">
             <GoDeviceDesktop />
           </a>
         </div>
         <div className="card-link-container">
-          <a href={props.githubUrl} className="card-link">
+          <a href={props.githubUrl} title={props.githubUrl} className="card-link">
             <FaGithub />
            </a>
         </div>
      </div>
-    </div>
+    </motion.div>
   )
 }
 

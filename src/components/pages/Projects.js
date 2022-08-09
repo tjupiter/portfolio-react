@@ -5,23 +5,17 @@ import { motion } from 'framer-motion';
 import ProjectCard from '../elements/ProjectCard';
 import projects from '../../assets/projects.js'
 
-function Projects( ) {
-  console.log(projects)
-
+function Projects() {
   const mainMotionVariants = {
-    hidden: {
-      y: '100vh',
-    },
-    visible: {
-      y: 0,
-      transition: { type: 'spring', stiffness: 80, }
+    hidden: { y: '100vh' },
+    visible: { y: 0,
+      transition: { type: 'spring', stiffness: 60, }
     },
     exit: {
       y: '100vh',
       transition: { ease: 'easeInOut'}
     },
   }
-
  
   return (
     <>
@@ -34,21 +28,22 @@ function Projects( ) {
         <div>
           <h2 className='project-header-text'>Projects</h2>
           <div className='project-cards-container'>
-            {projects.map((project) => (
+            {projects.map((project, i) => (
               <ProjectCard 
+                key={project.id}
                 title={project.title}
                 text={project.description}
                 siteUrl={project.siteUrl}
                 githubUrl={project.githubUrl}
-    
+                slug={project.slug}
+                index={i}
                 />
             ))}
           </div>
         </div>
       </motion.main>
-      <motion.div
-        className='button-container projects-buttons'
-      >
+
+      <motion.div className='button-container projects-buttons'>
         <Link to='/' className='link' >
           <motion.button className='step-button'
             whileHover={{

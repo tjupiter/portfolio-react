@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
-
-function Home({isFirstRender}) {
-
+function Home({ isFirstRender }) {
 // animate only on first render
   useEffect(()=> {
     if(isFirstRender.current) {
@@ -87,10 +85,9 @@ function Home({isFirstRender}) {
         </h2>
         <motion.p className='welcome-text'
           variants={isFirstRender.current ? parVariants : {}}
-          // variants={parVariants}
           initial='hidden'
           animate='visible'
-        >and welcome. I am a Frontend Web-developer on the lookout for new challanges. Have a look at my projects and get in touch if you like what you see.</motion.p>
+        >and welcome. <br />I am a Frontend Web-developer on the lookout for new challanges. Check out my portfolio and get in touch if you like what you see.</motion.p>
       </div>
       
         <motion.div
@@ -98,7 +95,7 @@ function Home({isFirstRender}) {
           initial='hidden'
           animate='visible'
         >
-          <Link to='projects' className='link'>
+          <Link to='projects' className='link home-link'>
             <motion.button className='step-button'
               whileHover={{
                 scale: 1.2,

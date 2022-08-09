@@ -4,11 +4,8 @@ import { motion } from 'framer-motion';
 
 function Header() {
   const headerVariants = {
-    hidden: {
-      y: -250
-    },
-    visible: {
-      y: -10,
+    hidden: { y: -250 },
+    visible: { y: -10,
       transition: {
         type: 'spring',
         stiffness: 120,
