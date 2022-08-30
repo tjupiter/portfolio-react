@@ -17,7 +17,7 @@
 .header-icon-container {
   display: flex;
   align-items: center;
-  gap: .2rem;
+  gap: .5rem;
   justify-content: center;
 }
 
@@ -26,7 +26,15 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: .5rem;
+  padding: .2rem;
+}
+
+.header-icons:hover,
+.header-icons:focus {
+  outline: none;
+  background-color: rgb(86, 83, 83);
+  color: white;
+  transform: .3s all ease-in-out;
 }
 
 header::after {
@@ -53,11 +61,7 @@ header::after {
     padding-top: 20px;
   }
 
-  .header-icon-container{
-    gap: .5rem;
-  } 
-  
   .header-icons {
-    padding: 0;
+    padding: .7rem;
   }
 }

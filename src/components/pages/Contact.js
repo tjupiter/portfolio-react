@@ -23,8 +23,6 @@ function Contact() {
     }
   }
 
-
-
   const buttonHoverVariants = {
     scale: 1.2,
     boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
@@ -44,7 +42,6 @@ function Contact() {
           <ul >
             <motion.li
               whileHover={anchorLinkVariants}
-              whileFocus={anchorLinkVariants}
             >
               <a href="mailto:hello@pitju.hu" title="hello@pitju.hu">
                 <FaAt />
@@ -53,7 +50,6 @@ function Contact() {
             </motion.li>
             <motion.li
               whileHover={anchorLinkVariants}
-              whileFocus={anchorLinkVariants}
             >
               <a href="tel:+447456607531" title="+447456607531">
                 <FaPhoneSquareAlt />
@@ -62,7 +58,6 @@ function Contact() {
             </motion.li>
             <motion.li
               whileHover={anchorLinkVariants}
-              whileFocus={anchorLinkVariants}
             >
               <a 
                 href="https://github.com/tjupiter/" 
@@ -74,7 +69,6 @@ function Contact() {
             </motion.li>
             <motion.li
               whileHover={anchorLinkVariants}
-              whileFocus={anchorLinkVariants}
             >
               <a 
                 href="https://www.linkedin.com/in/pitju/" 
@@ -94,10 +88,10 @@ function Contact() {
             whileHover={buttonHoverVariants}
             whileFocus={buttonHoverVariants}
           >
-            <FaLongArrowAltLeft className='arrow' /> Projects
+            <FaLongArrowAltLeft className='arrow' /> 
+            Projects
           </motion.button>
         </Link>
-        
       </motion.div>
     </motion.main>
     
