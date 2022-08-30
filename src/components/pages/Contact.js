@@ -13,6 +13,24 @@ function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  const anchorLinkVariants = {
+    scale: 1.4, 
+    color: 'rgba(80, 112, 234, 0.8)', 
+    originX: 0, 
+    transition: {
+      duration: .3, type: 'spring', stiffness: 300
+    }
+  }
+
+
+
+  const buttonHoverVariants = {
+    scale: 1.2,
+    boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
+    border: '1px solid rgba(80, 112, 234, 0.8)'
+  }
+
   return (
     <motion.main className="container contact"
       initial={{ x: '100vw' }}
@@ -25,8 +43,8 @@ function Contact() {
         <div className='contact-list-container'>
           <ul >
             <motion.li
-              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)' ,originX: 0 }}
-              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+              whileHover={anchorLinkVariants}
+              whileFocus={anchorLinkVariants}
             >
               <a href="mailto:hello@pitju.hu" title="hello@pitju.hu">
                 <FaAt />
@@ -34,8 +52,8 @@ function Contact() {
               </a>
             </motion.li>
             <motion.li
-              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
-              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+              whileHover={anchorLinkVariants}
+              whileFocus={anchorLinkVariants}
             >
               <a href="tel:+447456607531" title="+447456607531">
                 <FaPhoneSquareAlt />
@@ -43,8 +61,8 @@ function Contact() {
               </a>
             </motion.li>
             <motion.li
-              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
-              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+              whileHover={anchorLinkVariants}
+              whileFocus={anchorLinkVariants}
             >
               <a 
                 href="https://github.com/tjupiter/" 
@@ -55,8 +73,8 @@ function Contact() {
               </a>
             </motion.li>
             <motion.li
-              whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
-              transition={{ duration: .3, type: 'spring', stiffness: 300 }}
+              whileHover={anchorLinkVariants}
+              whileFocus={anchorLinkVariants}
             >
               <a 
                 href="https://www.linkedin.com/in/pitju/" 
@@ -71,15 +89,10 @@ function Contact() {
       </div>
 
       <motion.div className='link-container'>
-        <Link to='/projects' className='link'>
-          <motion.button className='step-button'
-            whileHover={{ 
-              scale: 1.2,
-              boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
-              border: '1px solid rgba(80, 112, 234, 0.8)'
-            }}
-
-            
+        <Link to='/projects' className='link' tabIndex={-1}>
+          <motion.button className='step-button' 
+            whileHover={buttonHoverVariants}
+            whileFocus={buttonHoverVariants}
           >
             <FaLongArrowAltLeft className='arrow' /> Projects
           </motion.button>

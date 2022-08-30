@@ -16,6 +16,12 @@ function Projects() {
       transition: { ease: 'easeInOut'}
     },
   }
+
+  const buttonHoverVariants = {
+    scale: 1.2,
+    boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
+    border: '1px solid rgba(80, 112, 234, 0.8)'
+  }
  
   return (
     <>
@@ -44,25 +50,19 @@ function Projects() {
       </motion.main>
 
       <motion.div className='button-container projects-buttons'>
-        <Link to='/' className='link' >
+        <Link to='/' className='link' tabIndex={-1}>
           <motion.button className='step-button'
-            whileHover={{
-              scale: 1.2,
-              boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
-              border: '1px solid rgba(80, 112, 234, 0.8)'
-            }}
+            whileHover={buttonHoverVariants}
+            whileFocus={buttonHoverVariants}
           >
             <FaLongArrowAltLeft className='arrow' />
             <span className='button-text-span'>Home</span>
           </motion.button>
         </Link>
-        <Link to='/contact' className='link' >
+        <Link to='/contact' className='link' tabIndex={-1}>
           <motion.button className='step-button'
-            whileHover={{
-              scale: 1.2,
-              boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
-              border: '1px solid rgba(80, 112, 234, 0.8)'
-            }}
+            whileHover={buttonHoverVariants}
+            whileFocus={buttonHoverVariants}
           >
             <span className='button-text-span'>Contact</span>
             <FaLongArrowAltRight className='arrow' /> 

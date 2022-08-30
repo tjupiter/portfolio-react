@@ -42,15 +42,21 @@ function Home({ isFirstRender }) {
     }
   }
 
-    const buttVar = {
-      hidden: { opacity: 0, scale: 0 },
-      visible: { opacity: 1, scale: 1,
-        transition: {
-          delay: 2.2,
-          type: 'spring'
-        }
+  const buttVar = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1,
+      transition: {
+        delay: 2.2,
+        type: 'spring'
       }
     }
+  }
+
+  const buttonHoverVariants = {
+    scale: 1.2,
+    boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
+    border: '1px solid rgba(80, 112, 234, 0.8)'
+  }
 
   return (
     <motion.main className="container home"
@@ -95,13 +101,10 @@ function Home({ isFirstRender }) {
           initial='hidden'
           animate='visible'
         >
-          <Link to='projects' className='link home-link'>
+        <Link to='projects' className='link home-link' tabIndex={-1}>
             <motion.button className='step-button'
-              whileHover={{
-                scale: 1.2,
-                boxShadow: '2px 2px 1px rgba(80, 112, 234, 0.8)',
-                border: '1px solid rgba(80, 112, 234, 0.8)'
-                }}
+              whileHover={buttonHoverVariants}
+              whileFocus={buttonHoverVariants}
             >
               <span className='.button-text-span'>Projects</span>
               <FaLongArrowAltRight className='arrow'/> 

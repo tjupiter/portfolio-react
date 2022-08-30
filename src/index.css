@@ -34,7 +34,7 @@ body {
 
 .hello-text {
   width: auto;
-  margin: 2rem auto ;
+  margin: 2rem auto;
 }
 
 .welcome-text {
@@ -79,6 +79,10 @@ body {
   text-transform: uppercase;
 }
 
+.step-button:focus {
+  outline: none;
+}
+
 .project-cards-container {
   display: flex;
   align-items: center;
@@ -121,6 +125,14 @@ body {
   margin-left: 3rem;
 }
 
+.contact-list-container li a:focus {
+  outline: none;
+  scale: 1.4;
+  color: rgba(80, 112, 234, 0.8);
+  transform-origin:left;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+
 .link-text {
   display: inline-block;
   padding-left: 1rem;
@@ -158,7 +170,7 @@ body {
     font-size: 1rem;
   }
 
-  .contact-list-container li a{
+  .contact-list-container li a {
     margin-left: 4rem;
   }
 }
