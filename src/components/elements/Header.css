@@ -1,10 +1,32 @@
-header {
+.header {
   width: 90vw;
   margin: 0 auto;
   padding: 2rem;
   font-size: 1.2rem;
   position: relative;
   overflow: hidden;
+}
+
+.header-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  justify-content: center;
+}
+
+.header-icons {
+  color: rgb(86, 83, 83);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
 }
 
 header::after {
@@ -26,7 +48,16 @@ header::after {
   header {
     font-size: 2rem;
   }
+
   header::after {
     padding-top: 20px;
+  }
+
+  .header-icon-container{
+    gap: .5rem;
+  } 
+  
+  .header-icons {
+    padding: 0;
   }
 }

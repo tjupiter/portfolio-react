@@ -46,7 +46,10 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="https://github.com/tjupiter/" title="https://github.com/tjupiter/" >
+              <a 
+                href="https://github.com/tjupiter/" 
+                title="https://github.com/tjupiter/" 
+                target="_blank" rel="noreferrer">
                 <FaGithub />
                 <span className='link-text'>Github Repo</span>
               </a>
@@ -55,7 +58,10 @@ function Contact() {
               whileHover={{ scale: 1.4, color: 'rgba(80, 112, 234, 0.8)', originX: 0 }}
               transition={{ duration: .3, type: 'spring', stiffness: 300 }}
             >
-              <a href="https://www.linkedin.com/in/pitju/" title="https://www.linkedin.com/in/pitju/">
+              <a 
+                href="https://www.linkedin.com/in/pitju/" 
+                title="https://www.linkedin.com/in/pitju/" 
+                target="_blank" rel="noreferrer">
                 <FaLinkedin />
                 <span className='link-text'>Find me on LinkedIn</span>
               </a>
@@ -81,6 +87,7 @@ function Contact() {
         
       </motion.div>
     </motion.main>
+    
   )
 }
 

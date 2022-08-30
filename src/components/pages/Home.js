@@ -87,7 +87,7 @@ function Home({ isFirstRender }) {
           variants={isFirstRender.current ? parVariants : {}}
           initial='hidden'
           animate='visible'
-        >and welcome. <br />I am a Frontend Web-developer on the lookout for new challanges. Check out my portfolio and get in touch if you like what you see.</motion.p>
+        >and welcome. <br />I am a Frontend Web-developer on the lookout for new challenges. Check out my portfolio and get in touch if you like what you see.</motion.p>
       </div>
       
         <motion.div
