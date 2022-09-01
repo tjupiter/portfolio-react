@@ -32,14 +32,16 @@ function Header() {
             href="mailto:hello@pitju.hu" 
             title="hello@pitju.hu" 
             target="_blank" rel="noreferrer" 
-            className='header-icons'>
+            className='header-icons'
+            aria-label='Send email to Pitju'>
             <FaAt />
           </a>
           <a 
             href="https://www.linkedin.com/in/pitju/" 
             title="https://www.linkedin.com/in/pitju/" 
             target="_blank" rel="noreferrer" 
-            className='header-icons'>
+            className='header-icons'
+            aria-label='Linkedin profile'>
           <FaLinkedin />
           </a>
         </div>
