@@ -48,7 +48,7 @@ function ProjectCard(props) {
             href={props.siteUrl} title={props.siteUrl} 
             target="_blank" rel="noopener noreferrer" 
             className="card-link"
-            tabindex="-1">
+            tabIndex="-1">
             <GoDeviceDesktop />
           </a>
         </div>
