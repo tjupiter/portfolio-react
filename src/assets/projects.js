@@ -1,5 +1,15 @@
 const projects = [
   {
+    "id": 16,
+    "slug": "portfolio",
+    "title": "Portfolio Website",
+    "thumbnail": "",
+    "description": "My portfolio site created with React. It was a great project to practice useEffect, useState, useRef and React Router. Framer Motion was used to creat the slick animation.",
+    "siteUrl": "https://portfolio.pitju.hu/projects/portfolio/",
+    "githubUrl": "https://github.com/tjupiter/portfolio-react",
+    "tags": "html, css, javascript, react"
+  },
+  {
     "id": 15,
     "slug": "rcw",
     "title": "Corp Website",
