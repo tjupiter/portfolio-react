@@ -1,7 +1,7 @@
 const projects = [
   {
     "id": 16,
-    "slug": "portfolio",
+    "slug": "TESZT",
     "title": "Portfolio Website",
     "thumbnail": "",
     "description": "My portfolio site created with React. It was a great to re-create the whole page using useEffect, useState, useRef and React Router. Framer Motion was used to creat the slick animation.",
